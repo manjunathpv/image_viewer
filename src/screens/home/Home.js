@@ -80,22 +80,25 @@ class Home extends Component {
                                         </div>
                                     </CardHeader>
                                     <CardContent>
-                                        <img className="image-poster" src={imgPost.images.low_resolution.url} alt="Abhishek" />
-                                        <hr />
-                                        <Typography >
-                                            <Box fontWeight="fontWeightRegular" m={1}>{imgPost.caption.text.substr(0, imgPost.caption.text.indexOf('\n'))}</Box>
-                                            <Box className="blue" fontWeight="fontWeightRegular" m={1}>{'#' + imgPost.tags.join(' #')}</Box>
-                                        </Typography>
-                                        <div className="like-container">
-                                            {this.state.postLiked === true ?
-                                                <FavoriteIcon className='red' id={imgPost.id} onClick={(event) => this.likeiconClickHandler(event, 'like')} /> :
-                                                <FavoriteBorderIcon id={imgPost.id} onClick={(event) => this.likeiconClickHandler(event, 'unlike')} />}
-                                            <Typography className="ml20">
-                                                <span>{imgPost.likes.count}</span>
-                                                <span> Likes </span>
+                                        <div className="image-poster">
+                                            <img src={imgPost.images.low_resolution.url} alt="Abhishek" />
+                                            <hr />
+                                            <Typography>
+                                                <Box fontWeight="fontWeightRegular" m={1}>{imgPost.caption.text.substr(0, imgPost.caption.text.indexOf('\n'))}</Box>
+                                                <Box className="blue" fontWeight="fontWeightRegular" m={1}>{'#' + imgPost.tags.join(' #')}</Box>
                                             </Typography>
+                                            <div className="like-container">
+                                                {this.state.postLiked === true ?
+                                                    <FavoriteIcon className='red' id={imgPost.id} onClick={(event) => this.likeiconClickHandler(event, 'like')} /> :
+                                                    <FavoriteBorderIcon id={imgPost.id} onClick={(event) => this.likeiconClickHandler(event, 'unlike')} />}
+                                                <Typography className="ml20">
+                                                    <span>{imgPost.likes.count}</span>
+                                                    <span> Likes </span>
+                                                </Typography>
 
+                                            </div>
                                         </div>
+
 
                                     </CardContent>
                                 </Card>
