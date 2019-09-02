@@ -1,0 +1,39 @@
+.avatar {
+    margin: 10px;
+}
+
+.grid-container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.parent-grid {
+    width: 800px;
+}
+
+.image-poster {
+    width: 320px;
+    height: 320px;
+    padding: 16px 16px 24px 20px;
+    display: inline-block;
+}
+
+hr {
+    border-top: 1px solid black;
+}
+
+.blue{
+    color: blue;
+}
+
+.red{
+    color:red;
+}
+
+.like-container{
+    display: flex
+}
+
+.ml20{
+    margin-left: 20px !important;
+}
