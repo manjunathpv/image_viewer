@@ -1,0 +1,11 @@
+/*noinspection ALL*/
+.MuiAvatar-root {
+    margin: 10 ;
+    width: 80 px ;
+    height: 80 px;
+}
+.image-poster {
+    height: 80vh;
+    /* width: auto; */
+    width:150px;
+}
