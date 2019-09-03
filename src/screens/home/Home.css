@@ -12,10 +12,13 @@
 }
 
 .image-poster {
-    width: 320px;
-    height: 320px;
     padding: 16px 16px 24px 20px;
     display: inline-block;
+}
+
+img{
+    height: 320px;
+    width: 320px;
 }
 
 hr {
@@ -31,7 +34,7 @@ hr {
 }
 
 .like-container{
-    display: flex
+    display: flex;
 }
 
 .ml20{
